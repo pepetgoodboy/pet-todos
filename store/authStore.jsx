@@ -45,10 +45,6 @@ const authStore = create((set, get) => ({
     set({ email: "", password: "", loading: false });
     redirect("/dashboard");
   },
-  // isValidEmail: (email) => {
-  //   const gmailRegex = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
-  //   return gmailRegex.test(email);
-  // },
   signUp: async () => {
     const { email, password } = get();
 
@@ -63,7 +59,7 @@ const authStore = create((set, get) => ({
       email: email,
       password: password,
       options: {
-        emailRedirectTo: "http://localhost:3000/verify",
+        emailRedirectTo: "https://pet-todos.vercel.app/verify",
       },
     });
 
