@@ -45,7 +45,7 @@ export default function Verify() {
       >
         <div className="flex flex-col w-1/4 mx-auto h-screen justify-center items-center font-montserrat space-y-10">
           <div className="flex flex-col text-center gap-2 font-borel text-white font-semibold">
-            <h3 className="text-5xl">Pet Todos</h3>
+            <h3 className="w-56 text-5xl">Pet Todos</h3>
             <h4 className="text-3xl">Verify Account</h4>
           </div>
           <Image
