@@ -38,8 +38,8 @@ const authStore = create((set, get) => ({
       return;
     }
     toast.success("Login Successfully!");
-    const token = localStorage.getItem("sb-ldnxunifjfzzjbldrxxe-auth-token");
-    Cookies.set("sb-ldnxunifjfzzjbldrxxe-auth-token", token, {
+    const token = localStorage.getItem("sb-bqypwedmbvpzkgyqezza-auth-token");
+    Cookies.set("sb-bqypwedmbvpzkgyqezza-auth-token", token, {
       expires: 3,
     });
     set({ email: "", password: "", loading: false });
@@ -77,7 +77,7 @@ const authStore = create((set, get) => ({
       toast.error(error.message);
       return;
     }
-    Cookies.remove("sb-ldnxunifjfzzjbldrxxe-auth-token");
+    Cookies.remove("sb-bqypwedmbvpzkgyqezza-auth-token");
     redirect("/");
   },
 }));

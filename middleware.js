@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 
 export function middleware(request) {
-  const token = request.cookies.get("sb-ldnxunifjfzzjbldrxxe-auth-token");
+  const token = request.cookies.get("sb-bqypwedmbvpzkgyqezza-auth-token");
 
   if (request.nextUrl.pathname.startsWith("/dashboard") && !token) {
     return NextResponse.redirect(new URL("/", request.url));
