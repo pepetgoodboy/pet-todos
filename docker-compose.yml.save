@@ -1,0 +1,16 @@
+services:
+  pet-todos:
+    container_name: pet-todos
+    build: .
+   
+    ports:
+      - "3007:3007"
+    env_file:
+      - .env
+    restart: unless-stopped
+    networks:
+      - main-network
+
+networks:
+  main-network:
+    external: true
